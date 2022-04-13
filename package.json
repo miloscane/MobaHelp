@@ -1,0 +1,19 @@
+{
+  "name": "mobahelp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miloscane/MobaHelp.git"
+  },
+  "author": "Milos Ivankovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miloscane/MobaHelp/issues"
+  },
+  "homepage": "https://github.com/miloscane/MobaHelp#readme"
+}
