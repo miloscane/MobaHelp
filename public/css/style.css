@@ -205,14 +205,14 @@ video{
 	border: 1px solid rgb(150,150,150);
 }
 
-#header{
+#header-help{
 	position: relative;
 	z-index: 100;
 	left: 230px;
 	width: calc(100% - 230px);
 }
 
-#header #top-title{
+#header-help #top-title{
 	display: inline-block;
 	vertical-align: top;
 	width: 869px;
@@ -220,7 +220,7 @@ video{
 	border-right: 1px solid rgb(225,225,225);
 }
 
-#header #top-title h1{
+#header-help #top-title h1{
 	color: rgb(255,255,255);
 	margin: 0;
 	line-height: 71px;
