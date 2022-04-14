@@ -134,6 +134,11 @@ legend{
 progress{
     vertical-align:baseline
 }
+
+video{
+	max-width: 100%;
+}
+
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{
     height:auto
 }
@@ -210,7 +215,7 @@ progress{
 #header #top-title{
 	display: inline-block;
 	vertical-align: top;
-	width: 854px;
+	width: 869px;
 	padding-left: 15px;
 	border-right: 1px solid rgb(225,225,225);
 }
@@ -218,7 +223,7 @@ progress{
 #header #top-title h1{
 	color: rgb(255,255,255);
 	margin: 0;
-	line-height: 70px;
+	line-height: 71px;
 	font-size: 32px;
 	font-weight: 600;
 }
@@ -243,12 +248,16 @@ progress{
 
 #navigation #top-logo{
 	text-align: center;
-	width: 210px;
-	padding: 10px;
+	width: 100%;
+	padding: 12px 10px;
 	border-right: 1px solid rgba(0,0,0,0.3);
 	display: inline-block;
 	vertical-align: top;
 	background-color: rgb(37,78,118);
+}
+
+#navigation #top-logo img{
+	margin: 0 auto;
 }
 
 #navigation .item .text{
