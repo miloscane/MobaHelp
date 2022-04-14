@@ -9,10 +9,8 @@
     <meta name="theme-color" content="#142a40">
     <meta name="msapplication-navbutton-color" content="#142a40">
     <meta name="apple-mobile-web-app-status-bar-style" content="#142a40">
-    <link href="/css/style.css?ver=<%=pageInfo.fileVersion%>" rel="stylesheet"><!--BRISI OVO U LIVE-->
-    <!--<link href="/html-modules/minified/style.min.css?ver=<%=pageInfo.fileVersion%>" rel="stylesheet">-->
-    <link href="/css/<%=pageName%>.css?ver=<%=pageInfo.fileVersion%>" rel="stylesheet"><!--BRISI OVO U LIVE-->
-    <!--<link href="/html-modules/minified/style.min.css?ver=<%=pageInfo.fileVersion%>" rel="stylesheet">-->
+    <link href="/css/style.css?ver=<%=mainFileVersion%>" rel="stylesheet">
+    <link href="/css/<%=pageName%>.css?ver=<%=mainFileVersion%>" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,13 +19,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <script type="text/javascript" src="/js/menu.js"></script>
     <meta property="og:title" content="MobaHelp" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://help.mobatec.cloud" />
     <meta property="og:site_name" content="MobaHelp" />
     <meta property="og:description" content="MobaHelp is here to help you get started with Process Modelling and using Mobatec Modeller software to create dynamic process models" />
     <meta property="og:image" content="https://help.mobatec.cloud/images/OG-Image.png" />
+
+
+    <script src="/js/jquery.js?ver=<%=mainFileVersion%>"></script>
+    <script src="/js/scroll.js?ver=<%=mainFileVersion%>"></script>
+    <script src="/js/navigation.js?ver=<%=mainFileVersion%>" defer></script>
   </head>
-  <body>
+  <body onscroll="scrolled()">
     <div id="site-content">
