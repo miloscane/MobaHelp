@@ -192,6 +192,7 @@ video{
 	left: 0;
 	right: 0;
 	width: 100%;
+	z-index: 200;
 }
 
 #main-menu .relative{
@@ -203,12 +204,31 @@ video{
 
 #main-menu .item{
 	display: inline-block;
-	curosr: pointer;
+	cursor: pointer;
 	border: 2px solid rgb(255,255,255);
 	border-radius: 5px;
 	padding: 5px;
 	margin: 0 10px;
 	color: rgb(255,255,255);
+}
+
+#main-menu .blueBackground{
+	background-color: rgb(37,78,118);
+	width: 230px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#main-menu .gradientBackground{
+	background: rgba(37,78,118,1);
+	background: linear-gradient(90deg, rgba(37,78,118,1) 0%, rgba(20,42,64,1) 100%);
+	width: calc( 100% - 230px);
+	position: absolute;
+	top: 0;
+	left: 230px;
+	bottom: 0;
 }
 
 .relative{
