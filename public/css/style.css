@@ -186,6 +186,31 @@ video{
     border:1px solid rgba(255,255,255,0.5);
 }
 
+#main-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+#main-menu .relative{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+#main-menu .item{
+	display: inline-block;
+	curosr: pointer;
+	border: 2px solid rgb(255,255,255);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 10px;
+	color: rgb(255,255,255);
+}
+
 .relative{
     position:relative;
 }
@@ -392,3 +417,584 @@ video{
 	border-radius: 3px;
 	padding: 2px;
 }
+
+
+
+/*COURSE*/
+#introcourse .background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(/images/Mobatec-Home-Banner-Background.jpeg);
+}
+
+#introcourse .content{
+    position:relative;
+    z-index:20;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#introcourse .form{
+    background: rgb(37,78,118);
+    background: linear-gradient(0deg, rgb(37,78,118), rgb(20,42,64) );
+    border-left:2px solid rgb(255,255,255);
+    border-right:2px solid rgb(255,255,255);
+    border-bottom:2px solid rgb(255,255,255);
+    padding:10px;
+    color:rgb(255,255,255);
+}
+
+#introcourse .formWrapper{
+    width:960px;
+    margin:0 auto;
+    padding-top:5px;
+}
+
+
+#introcourse .formWrapper .topWrap{
+    font-size:0;
+}
+
+#introcourse .formWrapper .topWrap .left,#introcourse .formWrapper .topWrap .right, #introcourse .formWrapper .topWrap .middle{
+    display:inline-block;
+    vertical-align:top;
+}
+
+#introcourse .formWrapper .topWrap .left,#introcourse .formWrapper .topWrap .right{
+    width:2px;
+    height:50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0) );
+}
+
+#introcourse .formWrapper .topWrap .middle{
+    width:calc(100% - 4px);
+    height:50px;
+    background: rgb(20,42,64);
+    background: linear-gradient(0deg, rgba(20,42,64,1), rgba(20,42,64,0) );
+}
+
+#introcourse .form .title{
+    font-weight:600;
+    font-size:24px;
+    margin-top: 30px;
+}
+
+#introcourse .form .title:first-child{
+    margin-top:-10px;
+}
+
+#introcourse .form .green{
+    font-weight:500;
+    color:rgb(20,255,20);
+}
+
+#introcourse .form ul{
+    margin-left: 10px;
+    list-style-image: url(/icons/arrow-pointing-to-right.png);
+}
+
+#introcourse .form ul li{
+    margin-bottom:5px;
+}
+
+#introcourse .form .textbox{
+    padding-left:25px;
+    margin-bottom:10px;
+}
+
+#introcourse .form .textbox p{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+#introcourse .inputsWrap{
+    font-size:0;
+    text-align:center;
+    max-width:700px;
+    width:100%;
+    margin:0 auto;
+}
+
+#introcourse .inputsWrap .inputWrap{
+    font-size:16px;
+    width:48%;
+    padding:3px;
+    vertical-align: top;
+    display:inline-block;
+}
+
+#introcourse .inputsWrap .note{
+    font-size:10px;
+    text-align:left;
+    margin-bottom:5px;
+}
+
+#introcourse .inputsWrap .inputWrap input{
+    max-width:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.2);
+    color:rgb(255,255,255);
+    outline:none !important;
+    border:1px solid rgba(255,255,255,1);
+    border-radius:3px;
+    padding:5px 10px;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+#introcourse .inputsWrap .inputWrap input:focus{
+    background-color:rgba(0,0,0,0.6);
+}
+
+#introcourse .inputsWrap .inputWrap input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,0.8);
+  opacity: 1; /* Firefox */
+}
+
+#introcourse .inputsWrap .inputWrap input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255,255,255,0.8);
+}
+
+#introcourse .inputsWrap .inputWrap input::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255,255,255,0.8);
+}
+
+#introcourse .submitButton {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color:#ededed;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:rgb(20,42,64);
+    font-weight:600;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+#introcourse .submitButton:hover {
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color:#dfdfdf;
+}
+
+#introcourse .submitButton:active {
+    position:relative;
+    top:1px;
+}
+
+#introcourse .exercisesWrap{
+    font-size:0;
+}
+
+#introcourse .exercisesWrap .exerciseWrap{
+    display:inline-block;
+    vertical-align:top;
+    width:50%;
+    font-size:16px;
+    padding-right:10%;
+    padding-bottom:16px;
+}
+
+#introcourse .exercisesWrap .exerciseWrap .exerciseTitle{
+    font-weight:600;
+}
+
+#introcourse .exercisesWrap .exerciseWrap .exerciseSubtitle{
+    font-weight:400;
+    font-size:14px;
+}
+
+#introcourse .exercisesWrap .exerciseWrap .exerciseInfo{
+    font-weight:200;
+    font-size:14px;
+    max-height:0px;
+    overflow:hidden;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+#introcourse .exercisesWrap .exerciseWrap .exerciseInfo ul{
+    margin:5px;
+    list-style-type: circle;
+    list-style-image:none;
+}
+
+#introcourse .exercisesWrap .exerciseActive .exerciseInfo{
+    max-height:300px !important;
+}
+
+#introcourse .exercisesWrap .exerciseWrap .more{
+    color:rgb(20,255,20);
+    font-size:14px;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+#introcourse .intro{
+    background-color: rgba(0,0,0,0.5);
+    border-left: 2px solid rgb(255,255,255);
+    border-right: 2px solid rgb(255,255,255);
+    border-top: 2px solid rgb(255,255,255);
+    padding: 10px;
+    margin-top:20px;
+    color: rgb(255,255,255);
+}
+
+#introcourse .intro .bigTitle{
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+}
+
+#introcourse .intro .bigSubtitle{
+    text-align:center;
+    font-size:24px;
+    font-weight:200;
+}
+
+
+#introcourse .formWrapper .bottomWrap{
+    font-size:0;
+}
+
+#introcourse .formWrapper .bottomWrap .left,#introcourse .formWrapper .bottomWrap .right, #introcourse .formWrapper .bottomWrap .middle{
+    display:inline-block;
+    vertical-align:top;
+}
+
+#introcourse .formWrapper .bottomWrap .left,#introcourse .formWrapper .bottomWrap .right{
+    width:2px;
+    height:50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,1) );
+}
+
+#introcourse .formWrapper .bottomWrap .middle{
+    width:calc(100% - 4px);
+    height:50px;
+    background: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.5) );
+}
+
+#introcourse .presentorImage{
+    width:200px;
+    margin-right:10px;
+    margin-bottom:10px;
+    float:left;
+    border:1px solid rgb(20,255,20);
+}
+
+#introcourse .presentor .title{
+    margin-top:0px !important;
+    font-size:20px;
+    font-weight:400;
+    color:rgb(20,255,20);
+}
+
+#introcourse .presentor .subtitle{
+    font-size:18px;
+    font-weight:200;
+    color:rgb(20,255,20);
+    margin-bottom:10px;
+}
+
+#introcourse .presentor .text{
+    font-size:14px;
+    font-weight:200;
+    min-height: 200px;
+}
+
+#introcourse #error{
+    padding:5px;
+    color:rgb(255,0,0);
+    font-size:16px;
+}
+
+#introcourse .messageWrap{
+    max-width:960px;
+    width:90%;
+    margin:0 auto;
+    margin-top:50px;
+    border:2px solid rgb(255,255,255);
+    color:rgb(255,255,255);
+    padding:20px;
+    background: rgb(37,78,118);
+    background: linear-gradient(0deg, rgb(20,42,64) 0%, rgb(37,78,118) 40%, rgb(37,78,118) 60%, rgb(20,42,64) 100% );
+    font-size:20px;
+    font-weight:400;
+}
+
+#introcourse .messageWrap .green{
+    color:rgb(20,255,20);
+    font-weight:500;
+}
+
+#introcourse .webinarInfo{
+    max-width:960px;
+    width:90%;
+    margin:0 auto;
+    border:2px solid rgb(255,255,255);
+    color:rgb(255,255,255);
+    padding:10px;
+    background: rgb(37,78,118);
+    background: linear-gradient(0deg, rgb(20,42,64) 0%, rgb(37,78,118) 40%, rgb(37,78,118) 60%, rgb(20,42,64) 100% );
+    font-size:16px;
+    font-weight:300;
+}
+
+#introcourse .webinarInfo .green{
+    color:rgb(20,255,20);
+    font-weight:500;
+}
+
+#introcourse .webinarInfo p{
+    margin:0;
+    margin-bottom:10px;
+}
+
+#introcourse .videoWrap{
+    max-width:960px;
+    width:90%;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+#introcourse .videoWrap video{
+    max-width:100%;
+    border:none;
+    outline:none;
+}
+
+#introcourse .videoWrap .title{
+    font-size:20px;
+    font-weight:600;
+    color:rgb(255,255,255);
+    padding:10px;
+    text-align:center;
+    background-color:rgb(20, 47, 72);
+}
+
+#introcourse .screenshotsWrap{
+    width:90vw;
+    margin:0 auto;
+    padding-top:10px;
+    font-size:0px;
+    text-align:center;
+}
+
+#introcourse .screenshotsWrap .screenshotWrap{
+    display:inline-block;
+    width: 13.5vw;
+    margin:0px 1vw;
+    margin-bottom:1vw;
+    height:7vw;
+    position:relative;
+    vertical-align:top;
+    z-index:10;
+}
+
+#introcourse .screenshotsWrap .screenshotWrap .screenshot{
+    border:2px ridge rgb(37,78,118);
+    width:100%;
+    max-width:none;
+    margin-left:0%;
+    z-index:20;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+#introcourse .screenshotsWrap .screenshotWrap:hover{
+    z-index:20;
+}
+
+#introcourse .screenshotsWrap .screenshotWrap .screenshot:hover{
+    width:300%;
+    margin-left:-75%;
+    margin-top:-50%;
+}
+
+#introcourse #course-content{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 25px;
+    padding-top: 100px;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(100,100,100);
+    padding-bottom: 100px;    
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.7);
+}
+
+#introcourse .exercisePart{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom:2px solid rgb(255,255,255);
+}
+
+#introcourse .exercisePart .title{
+    color: rgb(20,255,20);
+    text-align: center;
+}
+
+#introcourse .exercisePart .titleEx{
+    color: rgb(255,255,255);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+#introcourse .exercisePart .subTitle{
+    color: rgb(255,255,255);
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#introcourse .exercisePart .smallSeparator{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255,255,255);
+    border-radius: 3px;
+    margin: 15px auto;
+}
+
+#introcourse .headerButton{
+    color: rgb(255,255,255);
+    float: right;
+    cursor: pointer;
+    padding-right: 5px;
+    margin-r
+}
+
+#introcourse .exercisePart .objectives .title{
+    text-align: left;
+    font-size:18px !important;
+    font-weight:500;
+    padding-left: 15px;
+    color: rgb(255,255,255);
+}
+
+#introcourse .exercisePart .objectives{
+    text-align: center;
+}
+
+
+#introcourse .exercisePart .videos{
+    text-align: center;
+}
+
+#introcourse .exercisePart p{
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+#introcourse .exercisePart p span{
+    font-weight: 500;
+    color: rgb(20,255,20);
+}
+
+#introcourse .buttonsWrap{
+    text-align: center;
+}
+
+#introcourse .buttonsWrap a{
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255,255,255);
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    border: 1px solid rgb(20,255,20);
+}
+
+#introcourse #navigation{
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    top: 80px;
+    bottom: 92px;
+    width: 230px;
+    height: 799px;
+    background-color: rgba(20,42,64,1);
+    color: rgb(255,255,255);
+    padding: 10px;
+}
+
+#introcourse #navigation .courseName{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#introcourse #navigation .courseSeparator{
+    width: 90%;
+    height: 2px;
+    background-color: rgb(255,255,255);
+    border-radius: 2px;
+    margin: 15px auto;
+    margin-left: 0;
+}
+
+#introcourse #navigation .courseNavigation{
+    color: rgb(50,50,50);
+    background-color: rgb(255,255,255);
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#introcourse #navigation .courseNavigation .title{
+    font-weight: 600;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid rgb(220,220,220);
+    cursor: pointer;
+}
+
+#introcourse #navigation .courseNavigation .subItems{
+    background-color: rgb(220,220,220);
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: -3px;
+    font-size: 12px;
+}
+
+#introcourse #navigation .courseNavigation .subTitle{
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+#introcourse .scrollAnchor{
+    top: -80px;
+    position: relative;
+}
+
+@media only screen and (max-width: 960px) {/*tablet*/
+    #introcourse .formWrapper{
+        width:90%;
+    }
+}
+
