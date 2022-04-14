@@ -1,18 +1,18 @@
 //Server
-var server				=		require('express')();
-var http					=		require('http').Server(server);
+var server				=	require('express')();
+var http				=	require('http').Server(server);
 var httpl 				= 	require('http');
-var net						=		require('net');
-var express				=		require('express');
-var fs						=		require('fs');   
-var bodyParser		=		require('body-parser');    
-var session				=		require('express-session');
-var nodemailer 		= 	require('nodemailer');
-const dotenv 			=		require('dotenv');
+var net					=	require('net');
+var express				=	require('express');
+var fs					=	require('fs');   
+var bodyParser			=	require('body-parser');    
+var session				=	require('express-session');
+var nodemailer 			= 	require('nodemailer');
+const dotenv 			=	require('dotenv');
+var cookieParser		=	require('cookie-parser');
+var crypto				=	require('crypto');
+var mongo				=	require('mongodb');
 dotenv.config();
-var cookieParser	=		require('cookie-parser');
-var crypto				=		require('crypto');
-var mongo					=		require('mongodb');
 
 
 server.set('view engine','ejs');
@@ -42,5 +42,7 @@ http.listen(process.env.PORT, function(){
 var mainFileVersion	=	1.1;
 
 server.get('/',function(req,res){
-	res.send("Ok");
+	res.render('home',{
+		mainFileVersion: mainFileVersion
+	});
 });
