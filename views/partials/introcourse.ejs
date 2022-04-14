@@ -245,7 +245,7 @@
         </div>
         <script>
             function courseClick(elem){
-                var courses = document.getElementById("navigation").getElementsByClassName("courseNavigation");
+                var courses = document.getElementById("introcourse").getElementById("navigation").getElementsByClassName("courseNavigation");
                 for(var i=0;i<courses.length;i++){
                     if(elem.dataset.name==courses[i].dataset.course){
                         if(courses[i].style.display=="none"){
