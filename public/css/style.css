@@ -210,6 +210,7 @@ video{
 	padding: 5px;
 	margin: 0 10px;
 	color: rgb(255,255,255);
+	z-index: 20;
 }
 
 #main-menu .blueBackground{
@@ -219,6 +220,7 @@ video{
 	top: 0;
 	left: 0;
 	bottom: 0;
+	z-index: 10;
 }
 
 #main-menu .gradientBackground{
@@ -229,6 +231,7 @@ video{
 	top: 0;
 	left: 230px;
 	bottom: 0;
+	z-index: 10;
 }
 
 .relative{
@@ -255,6 +258,7 @@ video{
 	z-index: 100;
 	left: 230px;
 	width: calc(100% - 230px);
+	margin-top: 58px;
 }
 
 #header-help #top-title{
@@ -275,7 +279,7 @@ video{
 
 #navigation{
 	position: fixed;
-	top: 0;
+	top: 58px;
 	left: 0;
 	width: 230px;
 	background-color: rgb(245,245,245);
