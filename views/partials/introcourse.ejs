@@ -42,7 +42,7 @@
         </div>
         <div class="content" data-type="intro" style="display:block;">
             <div style="text-align:center;">
-                <img src="/logos/Mobatec-Modeller-White.svg" width="200">
+                <img src="/logos/Mobatec-Modeller-White.svg" width="200" style="margin:0 auto">
             </div>
             <div class="formWrapper" style="margin-left:250px">
                 <div class="intro">
@@ -245,7 +245,7 @@
         </div>
         <script>
             function courseClick(elem){
-                var courses = document.getElementById("introcourse").getElementById("navigation").getElementsByClassName("courseNavigation");
+                var courses = document.getElementsByClassName("introcourse")[0].getElementById("navigation").getElementsByClassName("courseNavigation");
                 for(var i=0;i<courses.length;i++){
                     if(elem.dataset.name==courses[i].dataset.course){
                         if(courses[i].style.display=="none"){
