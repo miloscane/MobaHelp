@@ -3,20 +3,37 @@
 	<div class="relative">
 		<div class="blueBackground"></div>
 		<div class="gradientBackground"></div>
-		<div class="item">
-			Software Help
+		<div class="item" onclick="menuHandle(this,1)">
+			<div>Software Help</div>
 		</div>
-		<div class="item">
-			Modelling Help
+		<div class="item itemActive" onclick="menuHandle(this,2)">
+			<div>Modelling Help</div>
+			<div class="arrow"></div>
 		</div>
 	</div>
 	
 </div>
-<div id="help">
+<div id="help" style="display: none;">
 	<%- include ("partials/help") -%>
 </div>
-<div id="introcourse" style="display:none">
+<div id="introcourse">
 	<%- include ("partials/introcourse") -%>
 </div>
+<script>
+	function menuHandle(elem,num){
+		if(num==1){
+			document.getElementById("help").style.display="block";
+			document.getElementById("introcourse").style.display="none";
+		}else if(num==2){
+			document.getElementById("help").style.display="none";
+			document.getElementById("introcourse").style.display="block";
+		}
+		var menuItems	=	elem.parentElement.getElementsByClassName(elem.classList[0]);
+		for(var i=0;i<menuItems.length;i++){
+			menuItems[i].classList.remove(itemActive);
+		}
 
+		elem.classList.add(itemActive);
+	}
+</script>
 <%- include ("partials/footer") -%>
