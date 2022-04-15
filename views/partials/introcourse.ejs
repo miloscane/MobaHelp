@@ -2,7 +2,7 @@
         <div class="header" id="header">
             <img src="/logos/Mobatec-White-Logo.svg" width="150" style="float: right">
         </div>
-        <div id="navigation">
+        <div id="navigation" class="coursesNavigation">
             <div class="courseName" data-name="intro" onclick="courseClick(this)">Introduction Course</div>
             <div class="courseNavigation" data-course="intro" style="display:none">
                 <div class="title" onclick="navigateTo(this)" data-elem="introduction">Introduction</div>
@@ -245,7 +245,7 @@
         </div>
         <script>
             function courseClick(elem){
-                var courses = document.getElementsByClassName("introcourse")[0].getElementById("navigation").getElementsByClassName("courseNavigation");
+                var courses = document.getElementsByClassName("introcourse")[0].getElementsByClassName("coursesNavigation")[0].getElementsByClassName("courseNavigation");
                 for(var i=0;i<courses.length;i++){
                     if(elem.dataset.name==courses[i].dataset.course){
                         if(courses[i].style.display=="none"){
