@@ -7,11 +7,12 @@ var express				=	require('express');
 var fs					=	require('fs');   
 var bodyParser			=	require('body-parser');    
 var session				=	require('express-session');
-var nodemailer 			= 	require('nodemailer');
+var nodemailer 		= require('nodemailer');
 const dotenv 			=	require('dotenv');
-var cookieParser		=	require('cookie-parser');
+var cookieParser	=	require('cookie-parser');
 var crypto				=	require('crypto');
-var mongo				=	require('mongodb');
+var mongo					=	require('mongodb');
+var io						=	require('socket.io')(http);
 dotenv.config();
 
 
@@ -40,6 +41,10 @@ http.listen(process.env.PORT, function(){
 });
 
 var mainFileVersion	=	1.1;
+
+io.on('connection', function(socket){
+	socket.emit("Hello from Milos");
+});
 
 server.get('/',function(req,res){
 	res.render('home',{
