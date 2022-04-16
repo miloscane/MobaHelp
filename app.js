@@ -43,8 +43,10 @@ http.listen(process.env.PORT, function(){
 var mainFileVersion	=	1.1;
 
 io.on('connection', function(socket){
-	socket.emit("Hello from Milos");
+	socket.emit("You are connected. Hello from Milos");
 });
+
+setInterval(function () {io.emit("Repeated hello from Milos")}, 10000);
 
 server.get('/',function(req,res){
 	res.render('home',{
